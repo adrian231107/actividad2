@@ -36,6 +36,14 @@ def move():
 
     clear()
 
+    options=(-10, 0, 10)
+    move_x = choice(options)
+    move_y = chioce(options)
+
+    if inside (vector(food.x + move_x, food.y + move_y)):
+        food.x += move_x
+        food.y += move_y
+
     for body in snake:
         square(body.x, body.y, 9, 'black')
 

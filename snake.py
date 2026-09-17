@@ -38,7 +38,7 @@ def move():
 
     options=(-10, 0, 10)
     move_x = choice(options)
-    move_y = chioce(options)
+    move_y = choice(options)
 
     if inside (vector(food.x + move_x, food.y + move_y)):
         food.x += move_x
